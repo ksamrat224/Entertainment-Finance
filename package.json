@@ -1,0 +1,37 @@
+{
+  "name": "runway",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.27.0",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:program": "NO_DNA=1 cargo test -p runway",
+    "test:magicsvm": "tsx tests/magicsvm.smoke.ts",
+    "check": "pnpm lint && pnpm test && pnpm test:program"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.4",
+    "lucide-react": "^0.468.0",
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@magicblock-labs/ephemeral-rollups-sdk": "0.16.2",
+    "@magicblock-labs/magicsvm": "0.2.1",
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.3",
+    "@types/react-dom": "^19.0.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
+

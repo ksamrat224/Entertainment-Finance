@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "skills": {
+    "solana-audit": {
+      "source": "beriktassuly/solana-audit-skill",
+      "commit": "a7f89b274f0c7c9cdd0d1b66763e5e198d00ae68",
+      "sourceType": "github",
+      "skillPath": "skill/SKILL.md",
+      "computedHash": "4f9649e99f41c630a3e4017d9d20814f19bd3c05ddd3e8ed67e7a992254a0c7f"
+    }
+  }
+}
